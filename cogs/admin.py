@@ -18,7 +18,7 @@ class Admin:
     @commands.is_owner()
     async def resetstatus(self, ctx):
         await self.bot.change_presence(game=discord.Game(name=None))
-        e = discord.Embed(title=None, description='Статус сброшен')
+        e = discord.Embed(title=None, description='Статус сброшен!')
         await ctx.send(embed=e, delete_after=10.0)
 
 def setup(bot):
